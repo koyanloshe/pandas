@@ -1,0 +1,23 @@
+{
+  "name": "pandas",
+  "version": "1.0.0",
+  "description": "An attempt at writing the Pandas library JS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koyanloshe/pandas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koyanloshe/pandas/issues"
+  },
+  "homepage": "https://github.com/koyanloshe/pandas#readme",
+  "dependencies": {
+    "mathjs": "^6.6.4"
+  }
+}
