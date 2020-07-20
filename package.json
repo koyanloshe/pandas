@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "An attempt at writing the Pandas library JS",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest "
   },
   "repository": {
     "type": "git",
@@ -17,7 +16,49 @@
     "url": "https://github.com/koyanloshe/pandas/issues"
   },
   "homepage": "https://github.com/koyanloshe/pandas#readme",
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "silent": false
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "commonjs": true,
+      "es6": true,
+      "jest": true
+    },
+    "extends": [
+      "airbnb"
+    ],
+    "plugins": [
+      "jest"
+    ],
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+      "ecmaVersion": 2018
+    },
+    "rules": {
+      "semi": "error"
+    }
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true
+  },
   "dependencies": {
     "mathjs": "^6.6.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "jest": "^25.5.4"
   }
 }
